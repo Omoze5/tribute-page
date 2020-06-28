@@ -1,0 +1,357 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 1300px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.head{
+    background-color: black;
+    height: 5vw;
+}
+
+.logo{
+    float: left;
+    width: 4%;
+    padding-top: 1%;
+}
+
+.main{
+    padding: 1%;
+    
+}
+
+.main ul{
+    text-align: center;
+}
+
+.main ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 1% 2%;
+    font-size: calc(7px + 1vw);
+}
+.main ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.main ul li a.active,
+.main ul li a:hover{
+    color: white;
+    background-color: #006400;
+    text-transform: uppercase;
+}
+
+/*Quote */
+
+.overlay{
+    position: relative;
+    top: 10%;
+    bottom: 10%;
+    margin: 0 15%;
+    margin: 0 15%;
+   text-align: center;
+    
+    
+}
+
+.quote{
+    background-color: coral;
+    color: white;
+    height: 100vw;
+
+}
+
+.quote h1{
+    position: relative;
+    top: 8%;
+    bottom: 8%;
+    transform: translate(-50% -55%);
+    font-size: calc(18px + 2vw);
+    text-align: center;
+}
+
+.quote p{
+    position: relative;
+    top: 8%;
+    bottom: 8%;
+    transform: translate(-50% -55%);
+    margin: 0 15%;
+    margin-top: 1%;
+    font-size: calc(10px + 1vw);
+    text-align: center;
+    display: block;
+}
+
+/* main container*/
+
+#title h2{
+    text-align: center;
+    font-size: 250%;
+    margin: 1% 0;
+}
+
+#title p{
+    margin: 0 10%;
+    font-family: sans-serif;
+    margin-bottom: 2%;
+    line-height: 2.0em;
+    font-size: calc(8px + 1vw);
+}
+/*Tributes*/
+
+#tributes{
+    display: flex;
+    padding: 0 2%;
+    margin-bottom: 3%;
+}
+
+#image{
+    width: 18%;
+    border-radius: 50%;
+    padding: 2%;
+    float: left;
+    
+}
+
+
+#img-div p{
+    line-height: 1.5em;
+    font-size: calc(5px + 1vw);
+    padding: 0 2%;
+}
+
+footer{
+    background-color: gray;
+    padding: 2%;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+/*icons */
+
+.close{
+    color: white;
+    font-size: 200%;
+    float: right;
+    padding: 1%;
+    display: none;
+    line-height: 3em;
+    cursor: pointer;
+    
+}
+
+.toggle{
+    color: white;
+    font-size: 200%;
+    float: right;
+    padding: 1%;
+    display: none;
+    line-height: 3em;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+@media screen and  (max-width:1300px){
+    
+    footer{
+        font-size: 2vw;
+    } 
+    
+    
+    .head{
+        height: 7vw;
+    }
+}
+
+
+
+@media screen and (max-width:1023px){
+    
+    .main ul li {
+        font-size: calc(20px + 1vw);
+    }
+    
+    
+    .quote p{
+    font-size: calc(10px + 2vw);
+}
+
+    #title p{
+    font-size: calc(10px + 2vw);
+}
+    .head{
+        height: 9vw;
+    }
+    
+    
+    footer{
+        font-size: 2.5vw;
+    }
+
+
+    #img-div p{
+    font-size: calc(10px + 2vw);
+}
+
+    
+}
+
+
+
+@media screen and (max-width:768px){
+    
+    
+    .main{
+        display: none;
+        position: relative;
+        width: 100%;
+        height: calc(100vw-30px);
+        background-color: #262626;
+        top: 95%;
+        left: 0;
+        z-index: 9999;
+        display: none;
+        
+        
+    }
+    
+    .main ul{
+        text-align: center;
+    }
+    
+    .main ul li {
+        display: block;
+        font-size: calc(18px + 3vw);
+    }
+    
+    footer{
+        font-size:6vw; 
+    }
+      
+    .close{
+        font-size: 300%;
+        line-height: 2.5em;   
+}
+
+     .toggle{
+         font-size: 300%;
+          display: block;
+          line-height: 1.5em;   
+
+    
+}
+    
+    .quote h1{
+        font-size: calc(22px + 3vw);
+
+    }
+    
+    .quote p{
+         font-size: calc(18px + 2vw);
+
+    }
+    
+    #title p{
+       font-size: calc(20px + 3vw);
+}
+     #img-div p{
+         font-size: calc(20px + 3vw);
+         padding-left: 4%;
+}
+
+    
+    .head{
+        height: 18.9vw;
+    }
+    .logo{
+        width: 6%;
+    }
+    
+}
+
+
+@media screen and (max-width:481px){
+    .head{
+        height: 38vw;
+    }
+    
+    .main ul li {
+        font-size: calc(34px + 3vw);
+    }
+    
+    
+    .quote{
+            height: 180vw;
+
+    } 
+    
+    .logo{
+        width: 8%;
+    }
+    
+    .quote h1{
+         font-size: calc(37px + 3vw);
+
+    }
+    
+    .quote p{
+        font-size: calc(32px + 3vw);
+
+    }
+    
+    #title h2{
+        font-size: 320%;
+
+    }
+    
+    #title p{
+      font-size: calc(38px + 3vw);
+
+    }
+    
+    footer{
+      font-size:15vw; 
+
+    }
+    
+    #image{
+      width: 24%;
+
+    }
+    
+    #img-div p{
+        font-size: calc(38px + 3vw);
+    }
+    
+    .toggle{
+      font-size: 400%;
+        padding-right: 3%;
+           
+    }
+    
+    .close{
+      font-size: 400%;
+      padding-right: 3%;
+    }
+    
+    
+    
+    
+}
+
+
+    
+
